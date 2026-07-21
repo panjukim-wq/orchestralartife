@@ -1,10 +1,12 @@
-# Orchestra Lartife Website v3
+# Orchestra Lartife Website V12
 
-V2 기준 변경 사항
-- 중앙 로고 10% 축소
-- 로고와 슬로건을 더 위로 이동
-- 연주자 얼굴과 겹치지 않도록 배치 조정
-- 공식 로고 이미지 자체는 수정하지 않음
-- CSS 그림자만으로 은은한 입체감 적용
-- 원본 공연 사진 유지
-- 그 외 V2 구성 유지
+Open `index.html` or `concerts.html` in a browser.
+
+Included:
+- Existing HOME / ABOUT / CONDUCTOR pages
+- New CONCERTS archive, ordered latest first
+- Four concert detail pages
+- Optimized posters and performance photographs
+- Original program-book PDFs
+
+For GitHub Pages, upload the contents of this folder to the repository root.
