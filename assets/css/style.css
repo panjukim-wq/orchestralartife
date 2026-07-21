@@ -2005,3 +2005,360 @@ body{background:var(--v17-paper);color:var(--v17-ink);letter-spacing:-.01em}
   .application-content{width:calc(100% - 40px);padding-top:62px}
   .language-section dl div{grid-template-columns:1fr;gap:7px}
 }
+
+
+/* V19 FINAL UNIFIED */
+.main-nav a{font-size:11.7px!important;letter-spacing:.18em!important}
+.language a,.language span{font-size:10.5px!important}
+.subpage-hero,.news-hero{padding-top:128px!important;padding-bottom:46px!important;min-height:auto!important}
+.subpage-hero-inner,.news-hero-inner{width:min(1240px,calc(100% - 80px))!important}
+.subpage-hero h1,.news-hero h1{margin-top:12px!important}
+.about-detail,.conductor-detail,.news-list{margin-top:52px!important}
+
+/* About */
+.about-story{width:min(1240px,calc(100% - 80px))!important;margin:0 auto!important;display:grid!important;grid-template-columns:minmax(0,1.8fr) minmax(350px,.95fr)!important;min-height:560px!important;background:#f2eee6!important}
+.about-story-image{position:relative!important;inset:auto!important;width:100%!important;height:100%!important;min-height:560px!important;object-fit:cover!important;object-position:center center!important;grid-column:1!important}
+.about-story-shade{display:none!important}
+.about-story-copy{position:relative!important;inset:auto!important;grid-column:2!important;width:auto!important;max-width:none!important;padding:46px 40px!important;background:#f2eee6!important;color:#211f1b!important;display:flex!important;flex-direction:column!important;justify-content:center!important}
+.about-story-copy p{color:#302d28!important;text-shadow:none!important;line-height:1.9!important;margin:0 0 22px!important}
+.about-story-copy p:last-child{margin-bottom:0!important}
+.about-stats{width:min(1240px,calc(100% - 80px))!important;margin:0 auto 96px!important}
+.stat-item strong{font-size:44px!important}
+
+/* Conductor */
+.career-block strong{font-weight:500!important}
+.career-block em.institution{font-family:"Cormorant Garamond",serif!important;font-size:20px!important;font-weight:500!important;font-style:italic!important;line-height:1.2!important}
+.career-sections{margin-top:52px!important}
+
+/* Projects */
+.coming-page{padding-top:0!important}
+.coming-panel{width:min(1240px,calc(100% - 80px))!important;margin:0 auto 96px!important;padding-top:128px!important;display:grid!important;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)!important;gap:78px!important;align-items:center!important}
+.coming-copy{order:1!important}
+.coming-visual{order:2!important}
+.coming-copy h1{font-size:clamp(62px,7vw,100px)!important;margin:12px 0 0!important;line-height:.9!important}
+.coming-status{margin-top:32px!important}
+.coming-description{margin-top:24px!important}
+.coming-visual img{height:620px!important;width:100%!important;object-fit:cover!important}
+
+/* News */
+.news-row .news-copy h2{font-size:clamp(28px,3vw,42px)!important;line-height:1.08!important;font-weight:500!important;letter-spacing:-.025em!important}
+.news-row-featured .news-copy h2{font-size:clamp(28px,3vw,42px)!important}
+
+/* Contact */
+.contact-signature{padding:92px 0 96px!important}
+.contact-signature-inner{width:min(1240px,calc(100% - 80px))!important;grid-template-columns:240px minmax(0,1fr)!important;gap:70px!important}
+.contact-label>span{display:none!important}
+.contact-main h2{font-family:"Cormorant Garamond",serif!important;font-size:clamp(62px,7vw,100px)!important;line-height:.9!important;font-weight:500!important;letter-spacing:-.05em!important;margin:0 0 40px!important}
+.contact-option strong{font-size:20px!important;font-weight:400!important}
+.contact-option:nth-child(2) strong{font-size:20px!important}
+
+/* International transfer */
+.transfer-box{margin-top:26px;border:1px solid var(--v17-line);background:var(--v17-paper-light)}
+.transfer-box h4{margin:0;padding:18px 22px;border-bottom:1px solid var(--v17-line);font-family:"Cormorant Garamond",serif;font-size:28px;font-weight:500}
+.transfer-grid{display:grid;grid-template-columns:210px minmax(0,1fr);margin:0!important;border:0!important}
+.transfer-grid div{display:contents!important}
+.transfer-grid dt,.transfer-grid dd{margin:0;padding:14px 20px;border-bottom:1px solid var(--v17-line)}
+.transfer-grid dt{font-size:10px;letter-spacing:.08em;color:var(--v17-muted)}
+.transfer-grid dd{border-left:1px solid var(--v17-line);font-size:14px;line-height:1.65}
+.transfer-grid div:last-child dt,.transfer-grid div:last-child dd{border-bottom:0}
+
+@media(max-width:900px){
+.about-story,.coming-panel{grid-template-columns:1fr!important}
+.about-story-image{min-height:430px!important;grid-column:1!important}
+.about-story-copy{grid-column:1!important}
+.coming-copy{order:1!important}.coming-visual{order:2!important}
+.contact-signature-inner{grid-template-columns:1fr!important;gap:32px!important}
+}
+@media(max-width:640px){
+.main-nav a{font-size:10px!important}
+.subpage-hero-inner,.news-hero-inner,.about-story,.about-stats,.coming-panel,.contact-signature-inner{width:calc(100% - 40px)!important}
+.about-story-image{min-height:340px!important}
+.about-story-copy{padding:30px 24px!important}
+.coming-visual img{height:390px!important}
+.contact-option strong{font-size:17px!important}
+.transfer-grid{grid-template-columns:1fr}.transfer-grid div{display:block!important}.transfer-grid dd{border-left:0!important}
+}
+
+
+/* V20 — refinement pass */
+
+/* Home news: notice and press titles visually unified */
+.home-news-item-featured .home-news-title-link strong,
+.home-news-item > strong{
+  font-family:"Cormorant Garamond",serif !important;
+  font-size:clamp(26px,2.6vw,38px) !important;
+  line-height:1.06 !important;
+  font-weight:500 !important;
+  letter-spacing:-.025em !important;
+}
+
+/* News page: all article titles 30% smaller and lighter */
+.news-row .news-copy h2,
+.news-row .news-copy h2 a{
+  font-family:"Cormorant Garamond",serif !important;
+  font-size:clamp(26px,2.4vw,38px) !important;
+  line-height:1.08 !important;
+  font-weight:500 !important;
+  letter-spacing:-.025em !important;
+}
+.notice-row .news-copy h2,
+.press-row .news-copy h2{
+  font-size:clamp(26px,2.4vw,38px) !important;
+}
+
+/* Contact title with refined slogan */
+.contact-title-line{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:40px;
+  margin-bottom:36px;
+}
+.contact-title-line h2{
+  margin:0 !important;
+}
+.contact-slogan{
+  margin:0 0 8px;
+  font-family:"Cormorant Garamond",serif;
+  font-size:clamp(22px,2.1vw,34px);
+  line-height:1;
+  font-style:italic;
+  font-weight:500;
+  letter-spacing:-.02em;
+  color:var(--v17-muted);
+  white-space:nowrap;
+}
+
+/* CJK application typography: remove accidental bold glyphs */
+.language-section[id="cn"],
+.language-section[id="jp"]{
+  font-weight:400;
+}
+.language-section[id="cn"] h2,
+.language-section[id="cn"] h3,
+.language-section[id="jp"] h2,
+.language-section[id="jp"] h3{
+  font-family:"Cormorant Garamond","Noto Serif SC","Noto Serif JP",serif !important;
+  font-weight:500 !important;
+}
+.language-section[id="cn"] strong,
+.language-section[id="jp"] strong,
+.language-section[id="cn"] b,
+.language-section[id="jp"] b{
+  font-weight:500 !important;
+}
+
+/* Bottom CTA: headline half-size, application link 3x larger */
+.application-bottom-cta-refined p{
+  font-size:clamp(24px,3vw,38px) !important;
+  line-height:1.1 !important;
+}
+.application-bottom-cta-refined a{
+  margin-top:34px !important;
+  font-size:clamp(22px,2.2vw,30px) !important;
+  letter-spacing:.08em !important;
+  padding-bottom:12px !important;
+}
+.application-bottom-cta-refined a b{
+  margin-left:16px !important;
+  font-size:1em !important;
+}
+
+/* Same CTA treatment regardless of selected language */
+.language-section + .application-bottom-cta-refined,
+.application-bottom-cta-refined{
+  text-align:center;
+}
+
+@media(max-width:760px){
+  .contact-title-line{
+    align-items:flex-start;
+    flex-direction:column;
+    gap:14px;
+  }
+  .contact-slogan{
+    margin:0;
+    white-space:normal;
+  }
+  .application-bottom-cta-refined a{
+    font-size:clamp(18px,6vw,24px) !important;
+  }
+}
+
+
+/* V21 — consistent CJK weight + CTA after every language */
+
+/* Use one real CJK font per language; no mixed fallback glyph weights */
+.language-section[id="cn"],
+.language-section[id="cn"] *{
+  font-family:"Noto Serif SC",serif !important;
+  font-weight:400 !important;
+}
+.language-section[id="jp"],
+.language-section[id="jp"] *{
+  font-family:"Noto Serif JP",serif !important;
+  font-weight:400 !important;
+}
+.language-section[id="cn"] h2,
+.language-section[id="cn"] h3,
+.language-section[id="jp"] h2,
+.language-section[id="jp"] h3{
+  font-weight:400 !important;
+  letter-spacing:-.02em !important;
+}
+.language-section[id="cn"] strong,
+.language-section[id="cn"] b,
+.language-section[id="jp"] strong,
+.language-section[id="jp"] b{
+  font-weight:400 !important;
+}
+
+/* One CTA immediately after each language section */
+.language-cta{
+  margin:0 calc(50% - 50vw);
+  width:100vw;
+}
+.application-content > .language-cta{
+  margin-top:-100px;
+  margin-bottom:100px;
+}
+.application-content > .language-cta:last-child{
+  margin-bottom:-120px;
+}
+.language-cta p{
+  font-size:clamp(22px,2.5vw,34px) !important;
+}
+.language-cta a{
+  font-size:clamp(20px,2vw,28px) !important;
+}
+
+@media(max-width:640px){
+  .application-content > .language-cta{
+    margin-top:-72px;
+    margin-bottom:72px;
+  }
+}
+
+
+/* V22 — recruitment popup */
+.recruit-popup{
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+}
+.recruit-popup.is-open{
+  display:flex;
+}
+.recruit-popup-backdrop{
+  position:absolute;
+  inset:0;
+  background:rgba(18,16,13,.48);
+  backdrop-filter:blur(4px);
+}
+.recruit-popup-card{
+  position:relative;
+  z-index:1;
+  width:min(520px,calc(100vw - 40px));
+  padding:44px 42px 34px;
+  background:#f8f5ee;
+  border:1px solid rgba(179,145,89,.35);
+  box-shadow:0 30px 90px rgba(25,20,14,.28);
+  text-align:left;
+}
+.recruit-popup-close{
+  position:absolute;
+  top:14px;
+  right:18px;
+  border:0;
+  background:transparent;
+  color:#25221d;
+  font-size:30px;
+  line-height:1;
+  cursor:pointer;
+}
+.recruit-popup-card h2{
+  margin:12px 0 0;
+  font-family:"Cormorant Garamond",serif;
+  font-size:clamp(54px,7vw,82px);
+  line-height:.88;
+  font-weight:500;
+  letter-spacing:-.05em;
+}
+.recruit-popup-subtitle{
+  margin-top:24px;
+  font-size:18px;
+  line-height:1.65;
+  color:#302d27;
+}
+.recruit-popup-meta{
+  display:flex;
+  gap:22px;
+  margin-top:24px;
+  padding-top:16px;
+  border-top:1px solid rgba(50,45,37,.16);
+  color:#8f6b32;
+  font-size:10px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.recruit-popup-link{
+  display:inline-flex;
+  align-items:center;
+  gap:18px;
+  margin-top:30px;
+  padding:13px 18px;
+  background:#1d1a16;
+  color:#fff;
+  text-decoration:none;
+  font-size:11px;
+  letter-spacing:.12em;
+}
+.recruit-popup-link:hover{
+  background:#9b7438;
+}
+.recruit-popup-today{
+  display:flex;
+  align-items:center;
+  gap:9px;
+  margin-top:22px;
+  color:#746d63;
+  font-size:11px;
+  cursor:pointer;
+}
+.recruit-popup-today input{
+  width:14px;
+  height:14px;
+}
+body.popup-open{
+  overflow:hidden;
+}
+
+@media(max-width:640px){
+  .recruit-popup{
+    align-items:flex-end;
+    padding:0;
+  }
+  .recruit-popup-card{
+    width:100%;
+    max-height:88vh;
+    overflow:auto;
+    padding:36px 24px 28px;
+    border-left:0;
+    border-right:0;
+    border-bottom:0;
+  }
+  .recruit-popup-card h2{
+    font-size:clamp(48px,16vw,66px);
+  }
+  .recruit-popup-subtitle{
+    font-size:16px;
+  }
+  .recruit-popup-meta{
+    flex-direction:column;
+    gap:8px;
+  }
+}

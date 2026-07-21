@@ -41,3 +41,47 @@ if ("IntersectionObserver" in window) {
 } else {
   revealItems.forEach((item) => item.classList.add("is-visible"));
 }
+
+
+// V22 recruitment popup
+document.addEventListener("DOMContentLoaded", function () {
+  const popup = document.getElementById("recruitPopup");
+  if (!popup) return;
+
+  const storageKey = "lartifeRecruitPopupHiddenUntil";
+  const hiddenUntil = Number(localStorage.getItem(storageKey) || 0);
+  const now = Date.now();
+
+  function openPopup() {
+    popup.classList.add("is-open");
+    popup.setAttribute("aria-hidden", "false");
+    document.body.classList.add("popup-open");
+  }
+
+  function closePopup() {
+    const hideToday = document.getElementById("hideRecruitPopupToday");
+    if (hideToday && hideToday.checked) {
+      const tomorrow = new Date();
+      tomorrow.setHours(24, 0, 0, 0);
+      localStorage.setItem(storageKey, String(tomorrow.getTime()));
+    }
+
+    popup.classList.remove("is-open");
+    popup.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("popup-open");
+  }
+
+  if (hiddenUntil <= now) {
+    setTimeout(openPopup, 650);
+  }
+
+  popup.querySelectorAll("[data-popup-close]").forEach(function (el) {
+    el.addEventListener("click", closePopup);
+  });
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && popup.classList.contains("is-open")) {
+      closePopup();
+    }
+  });
+});
