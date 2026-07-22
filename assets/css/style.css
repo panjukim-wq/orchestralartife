@@ -2362,3 +2362,31 @@ body.popup-open{
     gap:8px;
   }
 }
+
+
+/* V23 — mobile menu fix */
+@media (max-width: 880px) {
+  .site-header {
+    z-index: 10001 !important;
+  }
+
+  .menu-toggle {
+    position: relative;
+    z-index: 10003 !important;
+  }
+
+  .main-nav {
+    z-index: 10002 !important;
+    pointer-events: none;
+  }
+
+  .main-nav.open {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto;
+  }
+
+  .main-nav.open a {
+    color: #fff !important;
+  }
+}
