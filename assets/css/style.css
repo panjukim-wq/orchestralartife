@@ -2412,3 +2412,83 @@ body.popup-open{
   .main-nav.open a.active {color:#9b7438 !important;}
   .menu-toggle[aria-expanded="true"] span {background:#1f1d19 !important;}
 }
+
+
+/* V26 — four-language website */
+.language{
+  display:flex;
+  align-items:center;
+  gap:7px;
+  white-space:nowrap;
+}
+.language a,
+.language span{
+  font-size:9px!important;
+  letter-spacing:.08em!important;
+}
+.mobile-language{
+  display:none;
+}
+html[lang="ja"] body,
+html[lang="zh-CN"] body{
+  word-break:normal;
+  overflow-wrap:anywhere;
+}
+html[lang="ja"] .conductor-biography,
+html[lang="zh-CN"] .conductor-biography,
+html[lang="ja"] .about-story-copy,
+html[lang="zh-CN"] .about-story-copy{
+  line-height:1.92;
+}
+@media(max-width:880px){
+  .mobile-language{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-top:24px;
+    padding-top:20px;
+    width:100%;
+    border-top:1px solid rgba(31,29,25,.16);
+  }
+  .main-nav.open .mobile-language a{
+    width:auto!important;
+    padding:4px 0!important;
+    border:0!important;
+    font-family:Inter,sans-serif!important;
+    font-size:13px!important;
+    letter-spacing:.08em!important;
+  }
+  .main-nav.open .mobile-language span{
+    color:rgba(31,29,25,.35);
+  }
+}
+
+
+
+/* V27 — locale-specific typography and naming */
+html[lang="ja"] body{
+  font-family:"Noto Serif JP","Yu Mincho","Hiragino Mincho ProN",serif;
+}
+html[lang="ja"] .main-nav,
+html[lang="ja"] .language,
+html[lang="ja"] .eyebrow,
+html[lang="ja"] .performance-facts,
+html[lang="ja"] .archive-link,
+html[lang="ja"] .news-link{
+  font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+}
+html[lang="zh-CN"] body{
+  font-family:"Noto Serif SC","Songti SC","SimSun",serif;
+}
+html[lang="zh-CN"] .main-nav,
+html[lang="zh-CN"] .language,
+html[lang="zh-CN"] .eyebrow,
+html[lang="zh-CN"] .performance-facts,
+html[lang="zh-CN"] .archive-link,
+html[lang="zh-CN"] .news-link{
+  font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;
+}
+html[lang="ja"] .conductor-name-en,
+html[lang="zh-CN"] .conductor-name-en{
+  letter-spacing:.12em;
+}
