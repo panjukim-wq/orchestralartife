@@ -1,9 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://orchestralartife.com/</loc>
     <lastmod>2026-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <url>
+    <loc>https://orchestralartife.com/index-en.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://orchestralartife.com/index-jp.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://orchestralartife.com/index-cn.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://orchestralartife.com/conductor.html</loc>
+  </url>
+
+  <url>
+    <loc>https://orchestralartife.com/conductor-en.html</loc>
+  </url>
+
+  <url>
+    <loc>https://orchestralartife.com/conductor-jp.html</loc>
+  </url>
+
+  <url>
+    <loc>https://orchestralartife.com/conductor-cn.html</loc>
+  </url>
+
+  <url>
+    <loc>https://orchestralartife.com/concerts.html</loc>
+  </url>
+
+  <url>
+    <loc>https://orchestralartife.com/concerts-en.html</loc>
+  </url>
+
+  <url>
+    <loc>https://orchestralartife.com/concerts-jp.html</loc>
+  </url>
+
+  <url>
+    <loc>https://orchestralartife.com/concerts-cn.html</loc>
+  </url>
+
+  <url>
+    <loc>https://orchestralartife.com/projects.html</loc>
+  </url>
+
+  <url>
+    <loc>https://orchestralartife.com/projects-en.html</loc>
+  </url>
+
+  <url>
+    <loc>https://orchestralartife.com/projects-jp.html</loc>
+  </url>
+
+  <url>
+    <loc>https://orchestralartife.com/projects-cn.html</loc>
+  </url>
+
+  <url>
+    <loc>https://orchestralartife.com/news.html</loc>
+  </url>
+
+  <url>
+    <loc>https://orchestralartife.com/news-en.html</loc>
+  </url>
+
+  <url>
+    <loc>https://orchestralartife.com/news-jp.html</loc>
+  </url>
+
+  <url>
+    <loc>https://orchestralartife.com/news-cn.html</loc>
+  </url>
+
 </urlset>
