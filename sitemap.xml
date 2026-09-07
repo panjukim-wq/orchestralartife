@@ -3,7 +3,7 @@
 
   <url>
     <loc>https://orchestralartife.com/</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -86,5 +86,10 @@
   <url>
     <loc>https://orchestralartife.com/news-cn.html</loc>
   </url>
+
+  <url><loc>https://orchestralartife.com/concert-fall-in-concerto-ii.html</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://orchestralartife.com/concert-fall-in-concerto-ii-en.html</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://orchestralartife.com/concert-fall-in-concerto-ii-jp.html</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://orchestralartife.com/concert-fall-in-concerto-ii-cn.html</loc><lastmod>2026-09-07</lastmod></url>
 
 </urlset>
