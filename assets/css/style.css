@@ -2795,3 +2795,148 @@ html[lang="en"] .coming-hero h1{
   .coming-description br{display:none!important;}
   .coming-visual img{width:100%!important;height:auto!important;min-height:0!important;aspect-ratio:4/5!important;object-fit:cover!important;}
 }
+\n\n/* V33 — Fall in Concerto II ticket popup */
+.ticket-popup-card{width:min(900px,calc(100vw - 48px));padding:0;display:grid;grid-template-columns:minmax(280px,.9fr) minmax(300px,1.1fr);overflow:hidden;background:#0a0a0b;border-color:rgba(203,158,188,.42);color:#fff;text-align:left}
+.ticket-popup-poster{display:block;min-height:100%;background:#050506}.ticket-popup-poster img{display:block;width:100%;height:100%;object-fit:cover}
+.ticket-popup-copy{padding:52px 46px 38px;display:flex;flex-direction:column;justify-content:center}.ticket-popup-copy .eyebrow{color:#cda3c1}.ticket-popup-card .recruit-popup-close{color:#fff;z-index:3;text-shadow:0 1px 8px #000}.ticket-popup-card h2{color:#d4a7c6;font-size:clamp(50px,6vw,76px)}.ticket-popup-card .recruit-popup-subtitle{color:#fff;font-size:20px}.ticket-popup-card .recruit-popup-meta{color:#d4a7c6;border-color:rgba(255,255,255,.18)}.ticket-popup-card .recruit-popup-link{background:#d0a1c0;color:#09090a;font-weight:600}.ticket-popup-card .recruit-popup-link:hover{background:#fff}.ticket-popup-card .recruit-popup-today{color:#aaa}
+.event-ticket-button{display:inline-flex;align-items:center;justify-content:center;gap:14px;margin-top:28px;padding:15px 22px;background:#1d1a16;color:#fff;text-decoration:none;font-size:11px;letter-spacing:.12em}.event-ticket-button:hover{background:#9b7438}
+.artist-promo-grid{margin-top:42px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.artist-promo-grid figure{margin:0}.artist-promo-grid img{width:100%;display:block}.event-program-poster{margin:70px auto 0;max-width:900px}.event-program-poster img{width:100%;display:block}
+@media(max-width:700px){.ticket-popup{align-items:center;padding:18px}.ticket-popup-card{width:min(440px,calc(100vw - 28px));max-height:92vh;display:block;overflow:auto}.ticket-popup-poster img{aspect-ratio:1/1;object-fit:cover}.ticket-popup-copy{padding:26px 24px 26px}.ticket-popup-card h2{font-size:48px}.ticket-popup-card .recruit-popup-subtitle{margin-top:14px;font-size:16px}.ticket-popup-card .recruit-popup-meta{margin-top:16px}.ticket-popup-card .recruit-popup-link{margin-top:20px}.artist-promo-grid{grid-template-columns:1fr;gap:14px}}
+
+
+/* V34 — ticket popup compact desktop + full poster visibility */
+@media (min-width: 701px){
+  .ticket-popup-card{
+    width:min(780px,calc(100vw - 64px));
+    grid-template-columns:360px minmax(0,1fr);
+    align-items:stretch;
+    max-height:min(82vh,560px);
+  }
+  .ticket-popup-poster{
+    min-height:0;
+    align-self:stretch;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#050506;
+  }
+  .ticket-popup-poster img{
+    width:100%;
+    height:auto;
+    aspect-ratio:1/1;
+    object-fit:contain;
+  }
+  .ticket-popup-copy{
+    padding:32px 34px 28px;
+    justify-content:center;
+  }
+  .ticket-popup-card h2{
+    font-size:clamp(40px,4vw,54px);
+    line-height:.92;
+  }
+  .ticket-popup-card .recruit-popup-subtitle{margin-top:14px;font-size:17px;}
+  .ticket-popup-card .recruit-popup-meta{margin-top:18px;}
+  .ticket-popup-card .recruit-popup-link{margin-top:20px;}
+  .ticket-popup-card .recruit-popup-today{margin-top:16px;}
+}
+
+/* Fall in Concerto II posters: never crop artwork */
+.concert-poster-full{background:#050506;}
+.concert-poster-full img{
+  width:100% !important;
+  height:auto !important;
+  aspect-ratio:auto !important;
+  object-fit:contain !important;
+}
+.performance-header .event-poster-full img{
+  display:block;
+  width:100%;
+  height:auto;
+  object-fit:contain;
+}
+.performance-hero-image.event-poster-square img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:none;
+  object-fit:contain;
+}
+
+
+/* V35 — compact ticket popup: poster + CTA only, no desktop dead space */
+.ticket-popup-card{
+  width:min(560px,calc(100vw - 48px)) !important;
+  max-height:92vh !important;
+  padding:0 !important;
+  display:block !important;
+  overflow:auto !important;
+  background:#050506 !important;
+  border:1px solid rgba(203,158,188,.42) !important;
+}
+.ticket-popup-poster{
+  display:block !important;
+  width:100% !important;
+  min-height:0 !important;
+  background:#050506 !important;
+}
+.ticket-popup-poster img{
+  display:block !important;
+  width:100% !important;
+  height:auto !important;
+  aspect-ratio:1/1 !important;
+  object-fit:contain !important;
+}
+.ticket-popup-copy{
+  padding:15px 18px 16px !important;
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) auto !important;
+  gap:10px 16px !important;
+  align-items:center !important;
+  background:#050506 !important;
+}
+.ticket-popup-copy > .eyebrow,
+.ticket-popup-copy > h2,
+.ticket-popup-copy > .recruit-popup-subtitle{
+  display:none !important;
+}
+.ticket-popup-card .recruit-popup-meta{
+  margin:0 !important;
+  padding:0 !important;
+  border:0 !important;
+  display:flex !important;
+  flex-direction:column !important;
+  gap:3px !important;
+  color:#d4a7c6 !important;
+  font-size:9px !important;
+  line-height:1.35 !important;
+}
+.ticket-popup-card .recruit-popup-link{
+  margin:0 !important;
+  padding:11px 17px !important;
+  white-space:nowrap !important;
+}
+.ticket-popup-card .recruit-popup-today{
+  grid-column:1 / -1 !important;
+  margin:1px 0 0 !important;
+  font-size:10px !important;
+}
+.ticket-popup-card .recruit-popup-close{
+  top:10px !important;
+  right:12px !important;
+  width:34px !important;
+  height:34px !important;
+  border-radius:50% !important;
+  background:rgba(0,0,0,.58) !important;
+  color:#fff !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  font-size:26px !important;
+}
+@media(max-width:700px){
+  .ticket-popup{align-items:center !important;padding:14px !important;}
+  .ticket-popup-card{width:min(500px,calc(100vw - 28px)) !important;max-height:92vh !important;}
+  .ticket-popup-copy{padding:13px 15px 14px !important;grid-template-columns:1fr auto !important;}
+  .ticket-popup-card .recruit-popup-meta{font-size:8px !important;}
+  .ticket-popup-card .recruit-popup-link{padding:10px 14px !important;font-size:10px !important;}
+}

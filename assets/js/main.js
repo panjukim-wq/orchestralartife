@@ -58,12 +58,12 @@ if ("IntersectionObserver" in window) {
 }
 
 
-// V22 recruitment popup
+// V33 Fall in Concerto II ticket popup
 document.addEventListener("DOMContentLoaded", function () {
   const popup = document.getElementById("recruitPopup");
   if (!popup) return;
 
-  const storageKey = "lartifeRecruitPopupHiddenUntil";
+  const storageKey = "lartifeTicketPopupFallIIHiddenUntil";
   const hiddenUntil = Number(localStorage.getItem(storageKey) || 0);
   const now = Date.now();
 
